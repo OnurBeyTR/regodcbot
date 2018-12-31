@@ -35,6 +35,7 @@ if (message.content === prefix + 'komutlar') {
 
     var embed = new Discord.RichEmbed()
 		.addField('Test Dec' , 'Test Dec')
+		.setColor(0xFF0000)
 	message.channel.sendEmbed(embed);
 
   }
