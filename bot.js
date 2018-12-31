@@ -31,6 +31,13 @@ if (message.content === prefix + 'avatarım') {
     message.channel.send(message.author.avatarURL);
 
   }
+if (message.content === prefix + 'komutlar') {
+
+   embed=discord.Embed(title="Komutlar", color=0x00ff00)
+   embed.add_field(name=?ping = Botun pingini öğrenebilirsiniz., value=, inline=False)
+   await self.bot.say(embed=embed)
+
+  }
 if (message.content === prefix + 'restart') {
 	  
 	  if (message.author.id === "288003522648342530") {
