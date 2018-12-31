@@ -49,6 +49,20 @@ client.reload = command => {
   });
 };
 
+let statuses = ['discord.gg/UDD2Sm', 'Selam'];
+client.on('ready', () => {
+	
+	setInterval(function() {
+	
+	
+		let status = statuses[Math.floor(Math.random()*statuses.length)];
+		
+		//client.user.setPresence({ game: { name: status }, status: 'online' });
+		
+		client.user.setPresence({ activity: { name: status}, status: 'online'});
+	
+	}, 1000)
+})
 
 var request = require('request');
 var mcCommand = '?sunucu'; // Command for triggering
