@@ -57,9 +57,9 @@ client.on('ready', () => {
 	
 		let status = statuses[Math.floor(Math.random()*statuses.length)];
 		
-		//client.user.setPresence({ game: { name: status }, status: 'online' });
+		client.user.setPresence({ game: { name: status }, status: 'online' });
 		
-		client.user.setPresence({ activity: { name: status}, status: 'online'});
+		//client.user.setPresence({ activity: { name: status}, status: 'online'});
 	
 	}, 10000)
 })
