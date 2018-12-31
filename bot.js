@@ -33,9 +33,9 @@ if (message.content === prefix + 'avatarım') {
   }
 if (message.content === prefix + 'komutlar') {
 
-   embed=discord.Embed(title="Komutlar", color=0x00ff00)
-   embed.add_field(name=?ping = Botun pingini öğrenebilirsiniz., value=, inline=False)
-   await self.bot.say(embed=embed)
+    var embed = new Discord.RichEmbed()
+		.addField('Test Dec' , 'Test Dec')
+	message.channel.sendEmbed(embed);
 
   }
 if (message.content === prefix + 'restart') {
