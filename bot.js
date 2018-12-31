@@ -44,4 +44,4 @@ if (message.content === prefix + 'restart') {
 
 });
 
-client.login(ayarlar.token);
+client.login(process.env.BOT_TOKEN);
