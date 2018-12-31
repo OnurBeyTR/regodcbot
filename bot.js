@@ -36,8 +36,10 @@ if (message.content === prefix + 'komutlar') {
     var embed = new Discord.RichEmbed()
 		.setColor(0x00AE86)
     		.setTimestamp()
-    		.setAuthor(message.author.username, message.author.avatarURL)
-    		.setDescription('Özel mesajlarını kontrol et. :postbox:');
+    		.addField('Eylem:', 'Sunucudan atma')
+    		.addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
+    		.addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
+    		.addField('Sebep', reason);
 	message.channel.sendEmbed(embed);
 
   }
