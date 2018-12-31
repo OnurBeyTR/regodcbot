@@ -61,7 +61,7 @@ client.on('ready', () => {
 		
 		client.user.setPresence({ activity: { name: status}, status: 'online'});
 	
-	}, 1000)
+	}, 10000)
 })
 
 var request = require('request');
