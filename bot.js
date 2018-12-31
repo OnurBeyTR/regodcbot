@@ -34,8 +34,10 @@ if (message.content === prefix + 'avatarım') {
 if (message.content === prefix + 'komutlar') {
 
     var embed = new Discord.RichEmbed()
-		.setTitle('KOMUTLAR')
-		.setColor(0xFF0000)
+		.setColor(0x00AE86)
+    		.setTimestamp()
+    		.setAuthor(message.author.username, message.author.avatarURL)
+    		.setDescription('Özel mesajlarını kontrol et. :postbox:');
 	message.channel.sendEmbed(embed);
 
   }
