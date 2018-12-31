@@ -49,7 +49,7 @@ client.reload = command => {
   });
 };
 
-let statuses = ['discord.gg/UDD2Sm', 'Selam'];
+let statuses = ['discord.gg/UDD2Sm', '?yardım ile bot hakkında yardım alabilirsin', 'Coded By **OnurBeyTR**'];
 client.on('ready', () => {
 	
 	setInterval(function() {
