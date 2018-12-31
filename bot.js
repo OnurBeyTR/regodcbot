@@ -34,13 +34,11 @@ if (message.content === prefix + 'avatarım') {
 if (message.content === prefix + 'komutlar') {
 
     var embed = new Discord.RichEmbed()
-		.setColor(0x00AE86)
-    		.setTimestamp()
-    		.addField('Eylem:', 'Sunucudan atma')
-    		.addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
-    		.addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
-    		.addField('Sebep', reason);
-	message.channel.sendEmbed(embed);
+		.setColor(0xFF0000)
+  		.setTimestamp()
+  		.setAuthor(message.author.username, message.author.avatarURL)
+  		.addField(':warning: Uyarı :warning:', '`kick` adlı komutu özel mesajlarda kullanamazsın.')
+	message.author.send(embed);
 
   }
 if (message.content === prefix + 'restart') {
