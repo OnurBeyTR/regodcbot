@@ -8,7 +8,7 @@ var prefix = ayarlar.prefix;
 
 client.on('ready', () => {
 
-  console.log(`[BOT] ${client.user.tag} ADI İLE GİRİŞ YAPTI!`);
+  console.log(`[BOT] ${client.user.tag} ismi ile giriş yaptı.!`);
 
 });
 
@@ -16,7 +16,7 @@ client.on('message', message => {
 
   if (message.content === 'ping') {
 
-    message.channel.send('Pong! ' + client.ping + 'ms');
+    message.channel.send('Pingim ' + client.ping + 'ms');
 
   }
 
