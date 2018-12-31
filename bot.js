@@ -35,7 +35,6 @@ if (message.content === prefix + 'komutlar') {
 
     var embed = new Discord.RichEmbed()
 		.setTitle('KOMUTLAR')
-    		.addFields('?deneme = Deneme komutunu kullanırsın.')
 		.setColor(0xFF0000)
 	message.channel.sendEmbed(embed);
 
